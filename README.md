@@ -44,3 +44,7 @@ The website supports keyboard navigation, visible focus, reduced motion, browser
 Reading preferences are stored locally in the visitor’s browser. The website has no analytics or contact form. Chiara Gianni’s mail icon opens the visitor’s email client.
 
 Website by the [University of Latvia Digital Humanities Center](https://dhc.lu.lv).
+
+## Archival imagery in the design
+
+The opening portraits sit over a transparent mimosa cutout derived from Aspazija’s postcard, with no manuscript page behind them. The project introduction and digital corpus section use archival imagery from Aspazija’s correspondence and Ellen Key’s 1908 postcard. The original violet accent is retained; mimosa yellow from Aspazija’s postcard highlights hover and active states. No separate manuscript gallery is added. Credits and item-specific reuse statements are in `credits.html`; download URLs and references for the collected material are in `assets/manuscripts/sources.json`. Ellen Key’s provider CC BY statement is preserved in `assets/manuscripts/ellen-1908-rights.xml` (no version specified by the provider). Web files retain the full frame; CSS crops are used in the design.

@@ -1,0 +1,209 @@
+[
+  {
+    "id": "aspazija-1908",
+    "author": "Aspazija",
+    "recipient": "Rainis",
+    "date": "22 November 1908",
+    "place": "Bern",
+    "language": "Latvian",
+    "kind": "Illustrated postcard",
+    "reference": "RTMM 70998",
+    "holder": "Literature and Music Museum (Rakstniecības un mūzikas muzejs)",
+    "provider": "National Library of Latvia · RUNA, Rainis un Aspazija",
+    "source": "https://runa.lnb.lv/en/objects/892822/",
+    "rights": "Public domain; free reuse stated by the Latvian Digital Library",
+    "rights_url": "https://digitalabiblioteka.lv/?id=LNB-OAI.DOM.DOM:892822",
+    "description": "A sprig of yellow mimosa travels from Bern to Castagnola. Aspazija’s message to Rainis appears on the reverse of this illustrated postcard.",
+    "images": [
+      "aspazija-1908-front.jpg",
+      "aspazija-1908-back.jpg"
+    ],
+    "labels": [
+      "Mimosa illustration",
+      "Handwritten message and address"
+    ],
+    "text_url": "https://runa.lnb.lv/en/objects/890169",
+    "checked": "2026-11-09",
+    "display_changes": "Resized for web; original colours retained; CSS crops in decorative interface placements. Full-frame web files retained.",
+    "downloads": [
+      {
+        "file": "aspazija-1908-front.jpg",
+        "url": "https://runa.lnb.lv/wp-content/uploads/objects/892822/RTMM_70998_02-Aspazija.jpg"
+      },
+      {
+        "file": "aspazija-1908-back.jpg",
+        "url": "https://runa.lnb.lv/wp-content/uploads/objects/892822/RTMM_70998_01-Aspazija.jpg"
+      }
+    ],
+    "decorative_derivative": {
+      "file": "mimosa-cutout.png",
+      "method": "Built-in image generation tool: AI-assisted background extraction",
+      "purpose": "Decorative botanical motif; not an archival facsimile",
+      "source_file": "aspazija-1908-front.jpg"
+    }
+  },
+  {
+    "id": "aspazija-riga",
+    "author": "Aspazija",
+    "recipient": "Rainis",
+    "date": "20 May 1894",
+    "place": "Riga",
+    "language": "Latvian",
+    "kind": "Handwritten letter",
+    "reference": "Asp. K 2/4 · inv. no. 15619",
+    "holder": "Literature and Music Museum (Rakstniecības un mūzikas muzejs)",
+    "provider": "National Library of Latvia · RUNA, Rainis un Aspazija",
+    "source": "https://runa.lnb.lv/en/objects/61781/",
+    "rights": "Public domain; free reuse stated by the Latvian Digital Library",
+    "rights_url": "https://digitalabiblioteka.lv/?id=LNB-OAI.DOM.DOM:61781",
+    "description": "Ink handwriting with crossings-out in blue pencil: a letter that preserves the traces of writing and revision.",
+    "images": [
+      "aspazija-1894-riga-1.jpg",
+      "aspazija-1894-riga-2.jpg",
+      "aspazija-1894-riga-3.jpg"
+    ],
+    "labels": [
+      "Opening page",
+      "Middle spread",
+      "Final page"
+    ],
+    "text_url": "https://runa.lnb.lv/en/objects/61786",
+    "checked": "2026-11-09",
+    "display_changes": "Resized for web; original colours retained; CSS crops in decorative interface placements. Full-frame web files retained.",
+    "downloads": [
+      {
+        "file": "aspazija-1894-riga-1.jpg",
+        "url": "https://runa.lnb.lv/wp-content/uploads/objects/61781/RTMM_15619(1)-Aspazija.jpg"
+      },
+      {
+        "file": "aspazija-1894-riga-2.jpg",
+        "url": "https://runa.lnb.lv/wp-content/uploads/objects/61781/RTMM_15619(2-3)-Aspazija.jpg"
+      },
+      {
+        "file": "aspazija-1894-riga-3.jpg",
+        "url": "https://runa.lnb.lv/wp-content/uploads/objects/61781/RTMM_15619(4)-Aspazija.jpg"
+      }
+    ]
+  },
+  {
+    "id": "lou-1895",
+    "author": "Lou Andreas-Salomé",
+    "recipient": "Marie von Ebner-Eschenbach",
+    "date": "26 May 1895",
+    "place": "Berlin",
+    "language": "German",
+    "kind": "Handwritten letter",
+    "reference": "H.I.N.-57463 · urn:nbn:at:AT-WBR-231276",
+    "holder": "Wienbibliothek im Rathaus",
+    "provider": "Wienbibliothek im Rathaus",
+    "source": "https://www.digital.wienbibliothek.at/wbrobv02/content/titleinfo/3276869",
+    "rights": "Public Domain Mark 1.0",
+    "rights_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "description": "A handwritten letter from Lou Andreas-Salomé to the writer Marie von Ebner-Eschenbach, preserved in Vienna.",
+    "images": [
+      "lou-1895-1.jpg",
+      "lou-1895-2.jpg",
+      "lou-1895-3.jpg",
+      "lou-1895-4.jpg"
+    ],
+    "labels": [
+      "Scan 1",
+      "Scan 2",
+      "Scan 3",
+      "Scan 4"
+    ],
+    "checked": "2026-11-09",
+    "display_changes": "Resized for web; original colours retained; CSS crops in decorative interface placements. Full-frame web files retained.",
+    "downloads": [
+      {
+        "file": "lou-1895-1.jpg",
+        "url": "https://www.digital.wienbibliothek.at/download/webcache/1000/3276870"
+      },
+      {
+        "file": "lou-1895-2.jpg",
+        "url": "https://www.digital.wienbibliothek.at/download/webcache/1000/3276871"
+      },
+      {
+        "file": "lou-1895-3.jpg",
+        "url": "https://www.digital.wienbibliothek.at/download/webcache/1000/3276872"
+      },
+      {
+        "file": "lou-1895-4.jpg",
+        "url": "https://www.digital.wienbibliothek.at/download/webcache/1000/3276873"
+      }
+    ]
+  },
+  {
+    "id": "ellen-1908",
+    "author": "Ellen Key",
+    "recipient": "Stefan Zweig",
+    "date": "20 June 1908",
+    "place": "Kastelruth, Tyrol",
+    "language": "German",
+    "kind": "Handwritten postcard",
+    "reference": "SZ-SAM/AK.95",
+    "holder": "Literaturarchiv Salzburg",
+    "provider": "Literaturarchiv Salzburg · Stefan Zweig digital, GAMS, University of Graz",
+    "source": "https://gams.uni-graz.at/o:szd.korrespondenzen.key-ellen/sdef:TEI/get?locale=de",
+    "rights": "CC BY (version not specified in the source METS)",
+    "rights_url": "https://gams.uni-graz.at/archive/get/o:szd.667/METS_SOURCE",
+    "description": "A postcard addressed to Stefan Zweig in Vienna, with Ellen Key’s German handwriting beside the address.",
+    "images": [
+      "ellen-1908-2.jpg",
+      "ellen-1908-1.jpg"
+    ],
+    "labels": [
+      "Handwritten message and address",
+      "Illustrated side"
+    ],
+    "checked": "2026-11-09",
+    "display_changes": "Resized for web; original colours retained; CSS crops in decorative interface placements. Full-frame web files retained.",
+    "downloads": [
+      {
+        "file": "ellen-1908-2.jpg",
+        "url": "https://gams.uni-graz.at/o:szd.667/IMG.2"
+      },
+      {
+        "file": "ellen-1908-1.jpg",
+        "url": "https://gams.uni-graz.at/o:szd.667/IMG.1"
+      }
+    ]
+  },
+  {
+    "id": "aspazija-jelgava",
+    "author": "Aspazija",
+    "recipient": "Rainis",
+    "date": "8 May 1894",
+    "place": "Jelgava",
+    "language": "Latvian",
+    "kind": "Handwritten letter",
+    "reference": "Asp. K 2/3 · inv. no. 15618",
+    "holder": "Literature and Music Museum (Rakstniecības un mūzikas muzejs)",
+    "provider": "National Library of Latvia · RUNA, Rainis un Aspazija",
+    "source": "https://digitalabiblioteka.lv/?id=LNB-OAI.DOM.DOM:61597",
+    "rights": "Public domain; free reuse stated by the Latvian Digital Library",
+    "rights_url": "https://digitalabiblioteka.lv/?id=LNB-OAI.DOM.DOM:61597",
+    "description": "A letter sent from Jelgava to Rainis at the editorial office of Dienas Lapa, written in ink on two leaves.",
+    "images": [
+      "aspazija-1894-jelgava-1.jpg",
+      "aspazija-1894-jelgava-2.jpg"
+    ],
+    "labels": [
+      "Opening page",
+      "Inner spread"
+    ],
+    "text_url": "https://runa.lnb.lv/en/objects/61598",
+    "checked": "2026-11-09",
+    "display_changes": "Resized for web; original colours retained; CSS crops in decorative interface placements. Full-frame web files retained.",
+    "downloads": [
+      {
+        "file": "aspazija-1894-jelgava-1.jpg",
+        "url": "https://runa.lnb.lv/wp-content/uploads/objects/61597/RTMM_15618(1)-Aspazija.jpg"
+      },
+      {
+        "file": "aspazija-1894-jelgava-2.jpg",
+        "url": "https://runa.lnb.lv/wp-content/uploads/objects/61597/RTMM_15618(2-3)-Aspazija.jpg"
+      }
+    ]
+  }
+]
