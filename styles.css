@@ -234,3 +234,7 @@ img:not(.hero-manuscript):hover,a:focus-visible>img{translate:0 -3px;outline:non
 @media(hover:hover){.research-grid article:hover{translate:0 -4px}.research-grid article:hover:before{opacity:.6}.research-grid article:hover h3:after{width:48px;opacity:1}}
 @media(max-width:800px){.research-grid article:before,.research-grid article+article:before{inset:10px -12px}}
 @media(prefers-reduced-motion:reduce){.research-grid article,.research-grid article:before,.research-grid h3:after{transition:none}.research-grid article:hover{translate:none}}
+
+/* A muted wash keeps Latvia's hover balanced in the dark map palette. */
+[data-theme="dark"] .map-land.map-latvia:hover,[data-theme="dark"] .map-land.map-latvia:focus-visible{fill:color-mix(in srgb,var(--map-land) 75%,var(--mimosa) 25%)}
+@media(forced-colors:active){[data-theme="dark"] .map-land.map-latvia:hover,[data-theme="dark"] .map-land.map-latvia:focus-visible{fill:Highlight}}
