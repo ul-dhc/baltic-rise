@@ -1,0 +1,69 @@
+[
+  {
+    "file": "laura.jpg",
+    "subject": "Laura Marholm",
+    "date": "1889",
+    "credit": "Unknown photographer; reproduced in Ingvar Holm, Ola Hansson. En studie i åttitalsromantik (1957).",
+    "source": "https://commons.wikimedia.org/wiki/File:Laura_marholm_mohr_1889.jpg",
+    "rights": "Public domain",
+    "rights_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "checked": "2026-11-08",
+    "display_changes": "CSS crop and muted colour treatment; file unmodified"
+  },
+  {
+    "file": "ellen.jpg",
+    "subject": "Ellen Key",
+    "date": "1885",
+    "credit": "A. Apelgren; reproduced in Louise Nyström-Hamilton, Ellen Key, Her Life and Her Work (1913).",
+    "source": "https://commons.wikimedia.org/wiki/File:Ellen_Key_1885_-_A._Apelgren%2C_Stockholm.jpg",
+    "rights": "Public domain",
+    "rights_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "checked": "2026-11-08",
+    "display_changes": "CSS crop and muted colour treatment; file unmodified"
+  },
+  {
+    "file": "lou.jpg",
+    "subject": "Lou Andreas-Salomé",
+    "date": "c. 1897",
+    "credit": "Hofatelier Elvira, Munich.",
+    "source": "https://commons.wikimedia.org/wiki/File:Lou_Andreas-Salom%C3%A9_-_Foto_Atelier_Elvira.jpg",
+    "rights": "Public domain",
+    "rights_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "checked": "2026-11-08",
+    "display_changes": "CSS crop and muted colour treatment; file unmodified"
+  },
+  {
+    "file": "aspazija.jpg",
+    "subject": "Aspazija",
+    "date": "c. 1912 or earlier",
+    "credit": "Unknown photographer; source: Zudusī Latvija, object 32402.",
+    "source": "https://commons.wikimedia.org/wiki/File:Aspazija.jpg",
+    "rights": "Public domain",
+    "rights_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "checked": "2026-11-08",
+    "display_changes": "CSS crop and muted colour treatment; file unmodified"
+  },
+  {
+    "file": "zenta.jpg",
+    "subject": "Zenta Mauriņa",
+    "date": "1930s",
+    "credit": "Unknown photographer; Academic Library of the University of Latvia. LABR R12274-12; Iz883-12.",
+    "source": "https://commons.wikimedia.org/wiki/File:Zenta_Mauri%C5%86a_%281930%29_%28cropped%29.jpg",
+    "rights": "CC0 1.0",
+    "rights_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "checked": "2026-11-08",
+    "display_changes": "CSS crop and muted colour treatment; file unmodified"
+  },
+  {
+    "file": "goercke.jpg",
+    "subject": "Elisabeth Goercke",
+    "date": "Published in 1930",
+    "credit": "Unknown photographer; reproduced in Elisabeth Goercke, Nach den Sternen. Gedichte (Rīga, 1930). Digital source: Womage, Institute of Literature, Folklore and Art, University of Latvia (LU LFMI).",
+    "source": "https://www.womage.lv/en/persons/elizabete-gerke",
+    "rights": "Credited republication under Womage resource terms; not a Creative Commons licence",
+    "rights_url": "https://www.womage.lv/en/persons/elizabete-gerke",
+    "checked": "2026-11-08",
+    "display_changes": "CSS crop and muted colour treatment; image file unmodified",
+    "reuse_note": "Womage requires a reference to LU LFMI for republication. Large-scale copying and commercial use require written permission. This research website uses one credited portrait from the resource."
+  }
+]

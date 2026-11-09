@@ -1,0 +1,34 @@
+[
+  {
+    "file": "ul-faculty-humanities-en.png",
+    "subject": "University of Latvia, Faculty of Humanities",
+    "source_page": "https://www.hzf.lu.lv/en/about-us/the-faculty-of-humanities-brand/",
+    "download": "https://www.hzf.lu.lv/fileadmin/user_upload/LU.LV/Apaksvietnes/Fakultates/www.hzf.lu.lv/fakultate/zimols/HZF_eng.png",
+    "use": "Official English colour artwork on light backgrounds.",
+    "checked": "2026-11-09"
+  },
+  {
+    "file": "eu-ndp-cofunded-en.png",
+    "subject": "European Union co-funding and National Development Plan 2027",
+    "source_page": "https://liaa.business.gov.lv/en/support-opportunities/participation-national-stands-abroad",
+    "download": "https://s3.storage.pub.lvdc.gov.lv/liaa-bucket/shared/business.gov.lv/eiis-files/cms_uploads/EU%20and%20NAP%20logo.png",
+    "use": "Official English logo ensemble, unmodified. Selected for the supplied ERDF 2021\u20132027 funding description.",
+    "checked": "2026-11-09"
+  },
+  {
+    "file": "ul-faculty-humanities-en-white.png",
+    "source_page": "https://www.hzf.lu.lv/en/about-us/the-faculty-of-humanities-brand/",
+    "download": "https://www.hzf.lu.lv/fileadmin/user_upload/LU.LV/Apaksvietnes/Fakultates/www.hzf.lu.lv/fakultate/zimols/HZF_logo.zip",
+    "archive_entry": "HZF_logo/HZF_ENG_PNG/HZF_eng_invers.png",
+    "use": "Official white transparent artwork, unmodified; dark theme.",
+    "checked": "2026-11-09"
+  },
+  {
+    "file": "eu-ndp-cofunded-en-white.png",
+    "source_page": "https://www.esfondi.lv/normativie-akti-un-dokumenti/2021-2027-planosanas-periods/komunikacijas-un-dizaina-vadlinijas",
+    "download": "https://www.esfondi.lv/guidelines_and_regulations_assets/2021_2027/es-fondi-eng-logo.zip",
+    "archive_entry": "es-fondi-eng-logo/Vertical_ES-fondi-ENG-logo/OUTLINE_WHITE_LIDZFINANSE-ES+NAP/PNG/LIDZFINANSE-ES+NAP.png",
+    "use": "Official white transparent artwork, unmodified; dark theme.",
+    "checked": "2026-11-09"
+  }
+]
