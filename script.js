@@ -185,7 +185,7 @@ if (map && typeof birthplaceData !== 'undefined') {
     });
     panel.append(category, title, country, list);
     if (place.source) {
-      const source = document.createElement('a'); source.href = place.source; source.textContent = 'Biographical source'; source.className = 'map-source'; panel.append(source);
+      const source = document.createElement('a'); source.href = place.source; source.target = '_blank'; source.rel = 'noopener noreferrer'; source.textContent = 'Biographical source'; source.className = 'map-source'; panel.append(source);
     }
     document.querySelector('#map-title').textContent = `Birthplaces around the Baltic Sea: ${place.name} highlighted`;
   }

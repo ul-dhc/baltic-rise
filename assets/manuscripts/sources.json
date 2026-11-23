@@ -215,7 +215,12 @@
     "download": "https://memorialiemuzeji.lv/wp-content/uploads/2020/12/RTMM_266242-362x570.png",
     "text_source": "Elvīra Bloma, The Rainis and Aspazija House",
     "rights_note": "The exhibition does not state an open licence for the digital image. Source attribution retained.",
-    "checked": "2026-11-23"
+    "checked": "2026-11-23",
+    "decorative_derivative": {
+      "file": "poppies-cutout.png",
+      "method": "AI-assisted background extraction; decorative use only",
+      "source_file": "aspazija-poppies.png"
+    }
   },
   {
     "id": "aspazija-german",

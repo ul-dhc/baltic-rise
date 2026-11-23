@@ -23,26 +23,16 @@ jobs:
       - name: Prepare public website only
         run: |
           mkdir -p _site/assets
-          cp index.html credits.html styles.css script.js preferences.js map-data.js portraits.js .nojekyll _site/
+          cp index.html credits.html styles.css script.js preferences.js map-data.js portraits.js flowers.js .nojekyll _site/
           cp -R assets/. _site/assets/
           if [ -f CNAME ]; then cp CNAME _site/; fi
-      - uses: actions/upload-pages-artifact@v3
+      - id: upload
+        uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-      - name: Wait for Pages artifact registration
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          for attempt in 1 2 3 4 5 6; do
-            artifact_id=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" --jq '.artifacts[] | select(.name == "github-pages" and .expired == false) | .id')
-            if [ -n "$artifact_id" ]; then
-              echo "Pages artifact is available."
-              exit 0
-            fi
-            sleep 5
-          done
-          echo "Pages artifact was not registered in time."
-          exit 1
-      - name: Deploy
+      - name: Deploy uploaded Pages artifact
         id: deployment
-        uses: actions/deploy-pages@v5
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PAGES_ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
+        run: python3 .github/scripts/deploy-pages.py
