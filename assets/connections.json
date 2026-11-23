@@ -1,0 +1,207 @@
+{
+  "source": "Working diagram supplied by the project team in the 10 November 2026 amendments. Illustrative research model; relations have not been independently verified.",
+  "nodes": [
+    {
+      "id": "jaksch",
+      "name": "Elfriede Jaksch",
+      "external": false
+    },
+    {
+      "id": "holm",
+      "name": "Mia Holm",
+      "external": false
+    },
+    {
+      "id": "brincken",
+      "name": "Gertrud von den Brincken",
+      "external": false
+    },
+    {
+      "id": "marholm",
+      "name": "Laura Marholm",
+      "external": false
+    },
+    {
+      "id": "hunnius",
+      "name": "Monika Hunnius",
+      "external": false
+    },
+    {
+      "id": "key",
+      "name": "Ellen Key",
+      "external": false
+    },
+    {
+      "id": "lou",
+      "name": "Lou Andreas-Salomé",
+      "external": false
+    },
+    {
+      "id": "aspazija",
+      "name": "Aspazija",
+      "external": false
+    },
+    {
+      "id": "eckardt",
+      "name": "Elfriede Eckardt-Skalberg",
+      "external": false
+    },
+    {
+      "id": "helene",
+      "name": "Helene von Klot-Heydenfeldt",
+      "external": false
+    },
+    {
+      "id": "zenta",
+      "name": "Zenta Mauriņa",
+      "external": false
+    },
+    {
+      "id": "goercke",
+      "name": "Elisabeth Goercke",
+      "external": false
+    },
+    {
+      "id": "rilke",
+      "name": "Rainer Maria Rilke",
+      "external": true
+    },
+    {
+      "id": "hesse",
+      "name": "Hermann Hesse",
+      "external": true
+    },
+    {
+      "id": "elberskirchen",
+      "name": "Johanna Elberskirchen",
+      "external": true
+    }
+  ],
+  "links": [
+    {
+      "from": "marholm",
+      "to": "key",
+      "type": "letters"
+    },
+    {
+      "from": "marholm",
+      "to": "lou",
+      "type": "letters"
+    },
+    {
+      "from": "key",
+      "to": "lou",
+      "type": "letters"
+    },
+    {
+      "from": "key",
+      "to": "rilke",
+      "type": "letters"
+    },
+    {
+      "from": "lou",
+      "to": "rilke",
+      "type": "letters"
+    },
+    {
+      "from": "aspazija",
+      "to": "zenta",
+      "type": "letters"
+    },
+    {
+      "from": "aspazija",
+      "to": "eckardt",
+      "type": "letters"
+    },
+    {
+      "from": "zenta",
+      "to": "goercke",
+      "type": "letters"
+    },
+    {
+      "from": "hunnius",
+      "to": "hesse",
+      "type": "letters"
+    },
+    {
+      "from": "holm",
+      "to": "marholm",
+      "type": "relationship"
+    },
+    {
+      "from": "key",
+      "to": "rilke",
+      "type": "relationship"
+    },
+    {
+      "from": "lou",
+      "to": "helene",
+      "type": "relationship"
+    },
+    {
+      "from": "lou",
+      "to": "rilke",
+      "type": "relationship"
+    },
+    {
+      "from": "hunnius",
+      "to": "hesse",
+      "type": "relationship"
+    },
+    {
+      "from": "rilke",
+      "to": "hesse",
+      "type": "relationship"
+    },
+    {
+      "from": "jaksch",
+      "to": "key",
+      "type": "comparison"
+    },
+    {
+      "from": "jaksch",
+      "to": "marholm",
+      "type": "comparison"
+    },
+    {
+      "from": "holm",
+      "to": "marholm",
+      "type": "comparison"
+    },
+    {
+      "from": "holm",
+      "to": "hunnius",
+      "type": "comparison"
+    },
+    {
+      "from": "key",
+      "to": "aspazija",
+      "type": "comparison"
+    },
+    {
+      "from": "brincken",
+      "to": "hunnius",
+      "type": "comparison"
+    },
+    {
+      "from": "hunnius",
+      "to": "lou",
+      "type": "comparison"
+    },
+    {
+      "from": "hunnius",
+      "to": "zenta",
+      "type": "comparison"
+    },
+    {
+      "from": "eckardt",
+      "to": "goercke",
+      "type": "comparison"
+    },
+    {
+      "from": "zenta",
+      "to": "rilke",
+      "type": "comparison"
+    }
+  ]
+}

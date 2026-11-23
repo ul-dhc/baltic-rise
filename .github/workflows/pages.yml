@@ -23,7 +23,7 @@ jobs:
       - name: Prepare public website only
         run: |
           mkdir -p _site/assets
-          cp index.html credits.html styles.css script.js preferences.js map-data.js portraits.js flowers.js .nojekyll _site/
+          cp index.html credits.html styles.css script.js preferences.js map-data.js portraits.js flowers.js connections.js .nojekyll _site/
           cp -R assets/. _site/assets/
           if [ -f CNAME ]; then cp CNAME _site/; fi
       - id: upload

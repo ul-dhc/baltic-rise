@@ -10,14 +10,17 @@
   try {last=localStorage.getItem('baltic-previous-flower');} catch {}
   const flower=flowers.find(item=>last&&item.id!==last)||flowers[Math.floor(Math.random()*flowers.length)];
   try {localStorage.setItem('baltic-previous-flower',flower.id);} catch {}
-  hero.src=flower.cutout;
-  document.querySelectorAll('[data-flower-postcard]').forEach(image=>{image.src=flower.postcard;image.alt=image.getAttribute('aria-hidden')==='true'?'':flower.alt;});
+  const archiveFlower=flowers.find(item=>item.id!==flower.id);
+  // The hero always retains the original transparent mimosa.
+  hero.src=flowers[0].cutout;
+  document.querySelectorAll('[data-flower-about]').forEach(image=>{image.src=flower.cutout;image.alt='';});
+  document.querySelectorAll('[data-flower-postcard]').forEach(image=>{image.src=archiveFlower.postcard;image.alt=archiveFlower.alt;});
   document.querySelectorAll('[data-flower-credit]').forEach(link=>link.href=flower.credit);
-  document.querySelectorAll('[data-flower-link]').forEach(link=>{link.href=flower.postcard;link.setAttribute('aria-label','View the original '+flower.alt.toLowerCase()+' at full size');});
+  document.querySelectorAll('[data-flower-link]').forEach(link=>{link.href=archiveFlower.postcard;link.setAttribute('aria-label','View the original '+archiveFlower.alt.toLowerCase()+' at full size');});
   const caption=document.querySelector('[data-flower-caption]');
   if(caption){
     caption.replaceChildren();
-    flower.lines.forEach(line=>{caption.append(document.createTextNode(line),document.createElement('br'));});
-    const credit=document.createElement('a');credit.href=flower.credit;credit.textContent='Source & credit';caption.append(credit);
+    archiveFlower.lines.forEach(line=>{caption.append(document.createTextNode(line),document.createElement('br'));});
+    const credit=document.createElement('a');credit.href=archiveFlower.credit;credit.textContent='Source & credit';caption.append(credit);
   }
 })();
