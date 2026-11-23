@@ -6,7 +6,7 @@ English-language website for the Baltic-RISE research project at the University 
 
 A static website built with HTML, CSS and JavaScript. It includes twelve writer biographies with lifespan bars, an interactive birthplace map, project and team information, and image credits. The homepage selects three portraits from a six-person pool on each visit. Reading controls provide larger text and a dark theme.
 
-Project descriptions and biographies follow the supplied website information document. Researcher and supervision roles reflect the project team’s instructions. Project number and implementation dates remain visible placeholders until confirmed.
+Project descriptions and biographies follow the supplied website information document. Researcher and supervision roles reflect the project team’s instructions. Project No. 1.1.1.5/2/26/A/021 runs from 1 October 2026 to 30 September 2028.
 
 ## GitHub Pages
 

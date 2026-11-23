@@ -205,5 +205,34 @@
         "url": "https://runa.lnb.lv/wp-content/uploads/objects/61597/RTMM_15618(2-3)-Aspazija.jpg"
       }
     ]
+  },
+  {
+    "file": "aspazija-poppies.png",
+    "title": "Poppies postcard by Catharina Klein",
+    "collection": "Literature and Music Museum",
+    "reference": "RTMM 266242",
+    "source_page": "https://memorialiemuzeji.lv/en/digital-exhibitions/aspazijas-atklatnes/",
+    "download": "https://memorialiemuzeji.lv/wp-content/uploads/2020/12/RTMM_266242-362x570.png",
+    "text_source": "Elvīra Bloma, The Rainis and Aspazija House",
+    "rights_note": "The exhibition does not state an open licence for the digital image. Source attribution retained.",
+    "checked": "2026-11-23"
+  },
+  {
+    "id": "aspazija-german",
+    "author": "Aspazija",
+    "recipient": "Rainis",
+    "date": "4 and 7 May 1895",
+    "language": "German",
+    "reference": "Asp. K 2/7 · inv. no. 15625",
+    "holder": "Literature and Music Museum",
+    "provider": "National Library of Latvia / RUNA",
+    "source": "https://runa.lnb.lv/en/objects/60785/",
+    "catalogue": "https://dom.lndb.lv/data/obj/60785.html",
+    "images": [
+      "aspazija-1895-german-1.jpg"
+    ],
+    "download": "https://runa.lnb.lv/wp-content/uploads/objects/60785/RTMM_15625%281%29-Aspazija.jpg",
+    "checked": "2026-11-23",
+    "verification": "German stated by RUNA and LNB catalogues; opening page inspected."
   }
 ]
