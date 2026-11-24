@@ -315,3 +315,21 @@ img:not(.hero-manuscript):hover,a:focus-visible>img{translate:0 -3px;outline:non
 .credits-disclosure>summary{padding:22px 0;cursor:pointer;font:1.4rem/1.35 var(--serif);color:var(--accent)}
 .credits-disclosure>summary:hover,.credits-disclosure>summary:focus-visible{color:var(--writer-hover)}
 .credits-content{padding-bottom:24px}
+
+/* Show corpus manuscripts as complete sheets, with their natural proportions. */
+#corpus-manuscript{padding-top:8px}
+#corpus-manuscript .postcard-window{width:fit-content;max-width:100%;aspect-ratio:auto;overflow:visible;margin:0 auto 26px;transform:rotate(-3deg);border-radius:2px;box-shadow:0 12px 30px #211b2430}
+#corpus-manuscript .postcard-window img{position:static;inset:auto;width:auto;max-width:100%;height:auto;max-height:340px;object-fit:contain;object-position:center;opacity:1;border-radius:2px}
+#corpus-manuscript .postcard-window:hover{translate:0 -3px}
+#corpus-manuscript figcaption{font-size:.875rem;line-height:1.65}
+@media(max-width:800px){#corpus-manuscript .postcard-window img{max-height:310px}}
+@media(prefers-reduced-motion:reduce){#corpus-manuscript .postcard-window:hover{translate:none}}
+
+/* Decorative handwriting: source scans stay intact in the archive gallery. */
+.handwriting-filters{position:absolute;pointer-events:none}
+.archival-composition .archival-letter{filter:url(#handwriting-ink);box-shadow:none;opacity:.78;clip-path:inset(6% 7% 5%);mask-image:linear-gradient(to bottom,transparent,#000 7%,#000 90%,transparent);border-radius:0}
+[data-theme="dark"] .archival-composition .archival-letter{filter:url(#handwriting-cream);opacity:.7}
+.archival-composition .archival-letter:hover{box-shadow:none}
+#corpus-manuscript .postcard-window{box-shadow:none}
+#corpus-manuscript .postcard-window img{filter:url(#handwriting-cream);clip-path:inset(6% 7% 5%);mask-image:linear-gradient(to bottom,transparent,#000 8%,#000 91%,transparent);box-shadow:none;border-radius:0;opacity:.8}
+#corpus-manuscript .postcard-window:hover,#corpus-manuscript .postcard-window img:hover{box-shadow:none}

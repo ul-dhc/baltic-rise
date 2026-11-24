@@ -184,7 +184,8 @@
   try { previous = sessionStorage.getItem('baltic-manuscript') || ''; } catch {}
   const candidates = items.filter(item => item.id !== previous);
   let current = items.indexOf(candidates[Math.floor(Math.random() * candidates.length)]);
-  const corpusItem = items.filter(item => item.id !== items[current].id)[Math.floor(Math.random() * (items.length - 1))];
+  const corpusCandidates = items.filter(item => item.id !== items[current].id && item.id !== 'ellen');
+  const corpusItem = corpusCandidates[Math.floor(Math.random() * corpusCandidates.length)];
   function show(figure, item) {
     figure.dataset.manuscript = item.id;
     const image = figure.querySelector('img');
