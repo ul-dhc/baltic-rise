@@ -156,6 +156,7 @@
   let current = items.indexOf(candidates[Math.floor(Math.random() * candidates.length)]);
   const corpusItem = items.filter(item => item.id !== items[current].id)[Math.floor(Math.random() * (items.length - 1))];
   function show(figure, item) {
+    figure.dataset.manuscript = item.id;
     const image = figure.querySelector('img');
     image.src = item.src;
     image.alt = `Handwriting: ${item.title}`;
