@@ -202,3 +202,18 @@ if (map && typeof birthplaceData !== 'undefined') {
   });
   showPlace(selectedPlace);
 }
+
+// Specific source links reveal the credit they point to; the overview starts closed.
+(() => {
+  function revealCredit() {
+    const disclosure = document.querySelector('#image-credits');
+    if (!disclosure || !location.hash) return;
+    const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (target && disclosure.contains(target)) {
+      disclosure.open = true;
+      requestAnimationFrame(() => target.scrollIntoView({block:'start'}));
+    }
+  }
+  revealCredit();
+  window.addEventListener('hashchange', revealCredit);
+})();

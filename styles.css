@@ -309,3 +309,9 @@ img:not(.hero-manuscript):hover,a:focus-visible>img{translate:0 -3px;outline:non
 #archive-gallery[data-manuscript="ellen"] .gallery-image-window img:hover{translate:none;box-shadow:none}
 #corpus-manuscript[data-manuscript="ellen"] .postcard-window img{inset:auto;width:120%;max-width:none;height:auto;left:-10%;top:-152%}
 @media(prefers-reduced-motion:reduce){#archive-gallery[data-manuscript="ellen"] .gallery-image-window:hover{translate:none}}
+
+/* Credit details are available on demand. */
+.credits-disclosure{margin-top:32px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.credits-disclosure>summary{padding:22px 0;cursor:pointer;font:1.4rem/1.35 var(--serif);color:var(--accent)}
+.credits-disclosure>summary:hover,.credits-disclosure>summary:focus-visible{color:var(--writer-hover)}
+.credits-content{padding-bottom:24px}
