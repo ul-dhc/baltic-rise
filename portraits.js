@@ -90,6 +90,36 @@
   "height": 1800,
   "alt": "Portrait of Gertrud von den Brincken",
   "credit": "credits.html#credit-brincken"
+},
+{
+  "id": "holm",
+  "name": "Mia Holm",
+  "dates": "1845–1912",
+  "src": "assets/holm.jpg",
+  "width": 239,
+  "height": 320,
+  "alt": "Portrait of Mia Holm",
+  "credit": "credits.html#credit-holm"
+},
+{
+  "id": "helene",
+  "name": "Helene von Klot-Heydenfeldt",
+  "dates": "1865–1943",
+  "src": "assets/helene.jpg",
+  "width": 320,
+  "height": 380,
+  "alt": "Portrait of Helene von Klot-Heydenfeldt",
+  "credit": "credits.html#credit-helene"
+},
+{
+  "id": "jaksch",
+  "name": "Elfriede Jaksch",
+  "dates": "1842–1897",
+  "src": "assets/jaksch.jpg",
+  "width": 423,
+  "height": 600,
+  "alt": "Portrait of Elfriede Jaksch",
+  "credit": "credits.html#credit-jaksch"
 }
 ];
   const frames = Array.from(document.querySelectorAll('.hero .portrait'));

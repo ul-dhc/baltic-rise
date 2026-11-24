@@ -78,11 +78,12 @@
   {
     "file": "eckardt.jpg",
     "subject": "Elfriede Eckardt-Skalberg",
-    "credit": "Latvian National Archives · LVA 2176-1v-243-47001",
+    "credit": "Latvian State Archive · LVA 2176-1v-243-47001. Digital source: Literatura.lv.",
     "provided_by": "Chiara Gianni",
     "original_filename": "FOTO Elfriede-Eckardt-Skalberg-Latvian-State-Archive-LVA-2176-1v-243-47001.ppm",
     "reuse_note": "Supplied for the project website; included on the project team’s instruction. No open licence asserted.",
-    "display_changes": "Web copy resized; CSS crop and muted colour treatment."
+    "display_changes": "Web copy resized; CSS crop and muted colour treatment.",
+    "source": "https://www.literatura.lv/en/persons/elfride-ekarte-skalberga"
   },
   {
     "file": "brincken.jpg",
@@ -92,5 +93,34 @@
     "original_filename": "von den bricken.jpg",
     "reuse_note": "Supplied for the project website; included on the project team’s instruction. No open licence asserted.",
     "display_changes": "Web copy resized; CSS crop and muted colour treatment."
+  },
+  {
+    "file": "holm.jpg",
+    "subject": "Mia Holm",
+    "credit": "Portrait reproduced in Jeannot Emil Freiherr von Grotthuß (ed.), Das Baltische Dichterbuch: Eine Auswahl deutscher Dichtungen aus den Baltischen Provinzen Rußlands, 2nd revised edition. Reval: Verlag von Franz Kluge, 1895.",
+    "provided_by": "Chiara Gianni",
+    "original_filename": "Mia Holm.jpg",
+    "reuse_note": "Supplied for the project website; no open licence asserted.",
+    "display_changes": "Original image retained; display crops applied with CSS.",
+    "source": "https://projekt-gutenberg.org/authors/anthologien/books/das-baltische-dichterbuch/chapter/52/"
+  },
+  {
+    "file": "helene.jpg",
+    "subject": "Helene von Klot-Heydenfeldt",
+    "credit": "Helene Klingenberg, ca. 1890. AddF – Archiv der deutschen Frauenbewegung, Kassel · A-F1-00741. Reproduced in Lou Andreas-Salomé, Lebensrückblick (Zürich/Wiesbaden, 1951), plate p. 188a.",
+    "provided_by": "Chiara Gianni",
+    "original_filename": "Helene Klinkenberg.jpg",
+    "reuse_note": "Supplied for the project website; no open licence asserted.",
+    "display_changes": "Original image retained; display crops applied with CSS.",
+    "source": "https://meta-katalog.eu/Record/6159addf"
+  },
+  {
+    "file": "jaksch.jpg",
+    "subject": "Elfriede Jaksch",
+    "credit": "Portrait captioned “Schack von Igar (Elfriede Jaksch)”. Image supplied by Chiara Gianni.",
+    "provided_by": "Chiara Gianni",
+    "original_filename": "Elfriede_Jaksch.jpg",
+    "reuse_note": "Supplied for the project website; no open licence asserted.",
+    "display_changes": "Original image retained; display crops applied with CSS."
   }
 ]
