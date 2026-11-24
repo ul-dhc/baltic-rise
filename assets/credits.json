@@ -65,5 +65,32 @@
     "checked": "2026-11-08",
     "display_changes": "CSS crop and muted colour treatment; image file unmodified",
     "reuse_note": "Womage requires a reference to LU LFMI for republication. Large-scale copying and commercial use require written permission. This research website uses one credited portrait from the resource."
+  },
+  {
+    "file": "hunnius.jpg",
+    "subject": "Monika Hunnius",
+    "credit": "Latvian National Archives · LVVA 2996-7-39096 · 1927",
+    "provided_by": "Chiara Gianni",
+    "original_filename": "hunnius-monika-1-lvva-2996-7-39096-g1927.jpg",
+    "reuse_note": "Supplied for the project website; included on the project team’s instruction. No open licence asserted.",
+    "display_changes": "Web copy resized; CSS crop and muted colour treatment."
+  },
+  {
+    "file": "eckardt.jpg",
+    "subject": "Elfriede Eckardt-Skalberg",
+    "credit": "Latvian National Archives · LVA 2176-1v-243-47001",
+    "provided_by": "Chiara Gianni",
+    "original_filename": "FOTO Elfriede-Eckardt-Skalberg-Latvian-State-Archive-LVA-2176-1v-243-47001.ppm",
+    "reuse_note": "Supplied for the project website; included on the project team’s instruction. No open licence asserted.",
+    "display_changes": "Web copy resized; CSS crop and muted colour treatment."
+  },
+  {
+    "file": "brincken.jpg",
+    "subject": "Gertrud von den Brincken",
+    "credit": "Portrait supplied by Chiara Gianni",
+    "provided_by": "Chiara Gianni",
+    "original_filename": "von den bricken.jpg",
+    "reuse_note": "Supplied for the project website; included on the project team’s instruction. No open licence asserted.",
+    "display_changes": "Web copy resized; CSS crop and muted colour treatment."
   }
 ]

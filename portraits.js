@@ -1,4 +1,4 @@
-/* Verified portrait pool; source and reuse details are in assets/credits.json. */
+/* Project portrait pool; source and reuse details are in assets/credits.json. */
 (() => {
   const portraits = [
   {
@@ -60,7 +60,37 @@
     "height": 550,
     "alt": "Portrait of Elisabeth Goercke, published in 1930",
     "credit": "credits.html#credit-goercke"
-  }
+  },
+{
+  "id": "hunnius",
+  "name": "Monika Hunnius",
+  "dates": "1858–1934",
+  "src": "assets/hunnius.jpg",
+  "width": 430,
+  "height": 550,
+  "alt": "Portrait of Monika Hunnius",
+  "credit": "credits.html#credit-hunnius"
+},
+{
+  "id": "eckardt",
+  "name": "Elfriede Eckardt-Skalberg",
+  "dates": "1884–1964",
+  "src": "assets/eckardt.jpg",
+  "width": 588,
+  "height": 830,
+  "alt": "Portrait of Elfriede Eckardt-Skalberg",
+  "credit": "credits.html#credit-eckardt"
+},
+{
+  "id": "brincken",
+  "name": "Gertrud von den Brincken",
+  "dates": "1892–1982",
+  "src": "assets/brincken.jpg",
+  "width": 1335,
+  "height": 1800,
+  "alt": "Portrait of Gertrud von den Brincken",
+  "credit": "credits.html#credit-brincken"
+}
 ];
   const frames = Array.from(document.querySelectorAll('.hero .portrait'));
   if (frames.length !== 3) return;
@@ -106,4 +136,48 @@
   showNewSelection();
   // Returning through browser history can restore a page without rerunning scripts.
   window.addEventListener('pageshow', event => { if (event.persisted) showNewSelection(); });
+})();
+
+/* A small manuscript selection, with credits kept with each image. */
+(() => {
+  const gallery = document.querySelector('#archive-gallery');
+  const corpus = document.querySelector('#corpus-manuscript');
+  if (!gallery || !corpus) return;
+  const items = [
+    {id:'aspazija',src:'assets/manuscripts/aspazija-1895-german-1.jpg',title:'Aspazija to Rainis · 4 and 7 May 1895',credit:'Literature and Music Museum · Asp. K 2/7, inv. no. 15625 · Digital image: National Library of Latvia / RUNA',link:'credits.html#credit-aspazija-german',position:'center 35%'},
+    {id:'ellen',src:'assets/manuscripts/ellen-1908-2.jpg',title:'Ellen Key to Stefan Zweig · 20 June 1908',credit:'Literaturarchiv Salzburg · SZ-SAM/AK.95 · CC BY',link:'credits.html#credit-ellen-1908',position:'center 52%'},
+    {id:'lou',src:'assets/manuscripts/lou-1895-1.jpg',title:'Lou Andreas-Salomé to Marie von Ebner-Eschenbach · 26 May 1895',credit:'Wienbibliothek im Rathaus · H.I.N.-57463 · Public Domain Mark',link:'credits.html#credit-lou-1895',position:'center 40%'},
+    {id:'holm',src:'assets/manuscripts/holm-conrad-1887.jpg',title:'Mia Holm to Michael Georg Conrad',credit:'Monacensia, Münchner Stadtbibliothek · MGC B 390 · Image supplied by Chiara Gianni',link:'credits.html#credit-holm-conrad',position:'center 45%'},
+    {id:'marholm',src:'assets/manuscripts/marholm-schnitzler-1895.jpg',title:'Laura Marholm to Arthur Schnitzler · 24 April 1895',credit:'Image supplied by Chiara Gianni',link:'credits.html#credit-marholm-schnitzler',position:'center 55%'}
+  ];
+  let previous = '';
+  try { previous = sessionStorage.getItem('baltic-manuscript') || ''; } catch {}
+  const candidates = items.filter(item => item.id !== previous);
+  let current = items.indexOf(candidates[Math.floor(Math.random() * candidates.length)]);
+  const corpusItem = items.filter(item => item.id !== items[current].id)[Math.floor(Math.random() * (items.length - 1))];
+  function show(figure, item) {
+    const image = figure.querySelector('img');
+    image.src = item.src;
+    image.alt = `Handwriting: ${item.title}`;
+    image.style.objectPosition = item.position;
+    const fullSize = figure.querySelector(':scope > a');
+    if (fullSize) {
+      fullSize.href = item.src;
+      fullSize.setAttribute('aria-label', `View ${item.title} at full size`);
+    }
+    const caption = figure.querySelector('figcaption');
+    const link = document.createElement('a');
+    link.href = item.link;
+    link.textContent = 'Source & credit';
+    caption.replaceChildren(document.createTextNode(item.title), document.createElement('br'), document.createTextNode(item.credit + ' · '), link);
+  }
+  function render() {
+    show(gallery, items[current]);
+    gallery.querySelector('[data-gallery-count]').textContent = `${current + 1} / ${items.length}`;
+    try { sessionStorage.setItem('baltic-manuscript', items[current].id); } catch {}
+  }
+  gallery.querySelector('[data-gallery-prev]').addEventListener('click', () => {current = (current - 1 + items.length) % items.length; render();});
+  gallery.querySelector('[data-gallery-next]').addEventListener('click', () => {current = (current + 1) % items.length; render();});
+  show(corpus, corpusItem);
+  render();
 })();

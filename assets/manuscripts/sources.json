@@ -239,5 +239,30 @@
     "download": "https://runa.lnb.lv/wp-content/uploads/objects/60785/RTMM_15625%281%29-Aspazija.jpg",
     "checked": "2026-11-23",
     "verification": "German stated by RUNA and LNB catalogues; opening page inspected."
+  },
+  {
+    "id": "holm-conrad",
+    "author": "Mia Holm",
+    "recipient": "Michael Georg Conrad",
+    "reference": "MGC B 390",
+    "holder": "Monacensia im Hildebrandhaus, Münchner Stadtbibliothek",
+    "images": [
+      "holm-conrad-1887.jpg"
+    ],
+    "provided_by": "Chiara Gianni",
+    "original_filename": "Holm, Mia_MGC B 390_an Conrad, Michael Georg_10.05.1887_a.jpg",
+    "rights_note": "Supplied for use on the project website; no open licence asserted."
+  },
+  {
+    "id": "marholm-schnitzler",
+    "author": "Laura Marholm",
+    "recipient": "Arthur Schnitzler",
+    "date": "24 April 1895",
+    "images": [
+      "marholm-schnitzler-1895.jpg"
+    ],
+    "provided_by": "Chiara Gianni",
+    "original_filename": "Laura_Marholm_an_Arthur_Schnitzler_24.4.1895.pdf",
+    "rights_note": "Supplied for use on the project website; no open licence asserted."
   }
 ]
