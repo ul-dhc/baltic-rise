@@ -37,7 +37,6 @@
     ],
     "decorative_derivative": {
       "file": "mimosa-cutout.png",
-      "method": "Built-in image generation tool: AI-assisted background extraction",
       "purpose": "Decorative botanical motif; not an archival facsimile",
       "source_file": "aspazija-1908-front.jpg"
     }
@@ -218,7 +217,6 @@
     "checked": "2026-11-23",
     "decorative_derivative": {
       "file": "poppies-cutout.png",
-      "method": "AI-assisted background extraction; decorative use only",
       "source_file": "aspazija-poppies.png"
     }
   },
