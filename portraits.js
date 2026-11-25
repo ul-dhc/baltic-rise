@@ -177,8 +177,8 @@
     {id:'aspazija',src:'assets/manuscripts/aspazija-1895-german-1.jpg',title:'Aspazija to Rainis · 4 and 7 May 1895',credit:'Literature and Music Museum · Asp. K 2/7, inv. no. 15625 · Digital image: National Library of Latvia / RUNA',link:'credits.html#credit-aspazija-german',position:'center 35%'},
     {id:'ellen',src:'assets/manuscripts/ellen-1908-2.jpg',title:'Ellen Key to Stefan Zweig · 20 June 1908',credit:'Literaturarchiv Salzburg · SZ-SAM/AK.95 · CC BY',link:'credits.html#credit-ellen-1908',position:'center 52%'},
     {id:'lou',src:'assets/manuscripts/lou-1895-1.jpg',title:'Lou Andreas-Salomé to Marie von Ebner-Eschenbach · 26 May 1895',credit:'Wienbibliothek im Rathaus · H.I.N.-57463 · Public Domain Mark',link:'credits.html#credit-lou-1895',position:'center 40%'},
-    {id:'holm',src:'assets/manuscripts/holm-conrad-1887.jpg',title:'Mia Holm to Michael Georg Conrad',credit:'Monacensia, Münchner Stadtbibliothek · MGC B 390 · Image supplied by Chiara Gianni',link:'credits.html#credit-holm-conrad',position:'center 45%'},
-    {id:'marholm',src:'assets/manuscripts/marholm-schnitzler-1895.jpg',title:'Laura Marholm to Arthur Schnitzler · 24 April 1895',credit:'Image supplied by Chiara Gianni',link:'credits.html#credit-marholm-schnitzler',position:'center 55%'}
+    {id:'holm',src:'assets/manuscripts/holm-conrad-1887.jpg',title:'Mia Holm to Michael Georg Conrad',credit:'Monacensia, Münchner Stadtbibliothek · MGC B 390',link:'credits.html#credit-holm-conrad',position:'center 45%'},
+    {id:'marholm',src:'assets/manuscripts/marholm-schnitzler-1895.jpg',title:'Laura Marholm to Arthur Schnitzler · 24 April 1895',credit:'',link:'credits.html#credit-marholm-schnitzler',position:'center 55%'}
   ];
   let previous = '';
   try { previous = sessionStorage.getItem('baltic-manuscript') || ''; } catch {}
@@ -201,7 +201,9 @@
     const link = document.createElement('a');
     link.href = item.link;
     link.textContent = 'Source & credit';
-    caption.replaceChildren(document.createTextNode(item.title), document.createElement('br'), document.createTextNode(item.credit + ' · '), link);
+    caption.replaceChildren(document.createTextNode(item.title), document.createElement('br'));
+    if(item.credit)caption.append(document.createTextNode(item.credit+' · '));
+    caption.append(link);
   }
   function render() {
     show(gallery, items[current]);
