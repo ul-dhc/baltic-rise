@@ -154,6 +154,7 @@ if (map && typeof birthplaceData !== 'undefined') {
   const latviaButton = document.querySelector('#map-latvia');
   let selectedPlace = birthplaceData[0];
   let zoomed = false;
+  const mobileMap=matchMedia('(max-width:600px)');
   function setZoom(latvia) {
     zoomed = latvia;
     map.setAttribute('viewBox', latvia ? '395 280 285 155' : '0 0 945 620');
@@ -162,7 +163,10 @@ if (map && typeof birthplaceData !== 'undefined') {
     latviaButton.setAttribute('aria-pressed', String(latvia));
     map.querySelectorAll('.map-place').forEach(point => {
       const place = birthplaceData.find(p => p.id === point.dataset.mapPlace);
-      point.setAttribute('transform', `translate(${place.x},${place.y}) scale(${latvia ? .4 : 1})`);
+      const scale=latvia ? (mobileMap.matches ? .62 : .4) : (mobileMap.matches ? 1.6 : 1);
+      point.setAttribute('transform', `translate(${place.x},${place.y}) scale(${scale})`);
+      const label=point.querySelector('.map-point-label');
+      if(label){const left=mobileMap.matches&&place.x>740;label.setAttribute('x',left?'-16':'16');label.setAttribute('text-anchor',left?'end':'start');}
     });
   }
   function showPlace(place, selectedWriter = '') {
@@ -200,6 +204,23 @@ if (map && typeof birthplaceData !== 'undefined') {
     if (selectedPlace.country !== 'Latvia') showPlace(birthplaceData[0]);
     setZoom(true);
   });
+  map.setAttribute('role','group');
+  map.querySelectorAll('.map-place').forEach(point=>{
+    const place=birthplaceData.find(p=>p.id===point.dataset.mapPlace);
+    point.setAttribute('role','button');point.setAttribute('tabindex','0');point.setAttribute('aria-label','Show '+place.name);
+    point.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();showPlace(place);}});
+  });
+  // Resolve taps by the nearest marker, so neighbouring birthplaces do not steal taps.
+  map.addEventListener('click',event=>{
+    const bounds=map.getBoundingClientRect();
+    const points=Array.from(map.querySelectorAll('.map-place')).map(point=>{
+      const rect=point.querySelector('.map-dot').getBoundingClientRect(),x=rect.x+rect.width/2,y=rect.y+rect.height/2;
+      return {point,x,y,distance:Math.hypot(event.clientX-x,event.clientY-y)};
+    }).filter(p=>p.x>=bounds.left&&p.x<=bounds.right&&p.y>=bounds.top&&p.y<=bounds.bottom).sort((a,b)=>a.distance-b.distance);
+    if(points[0]?.distance<28)showPlace(birthplaceData.find(p=>p.id===points[0].point.dataset.mapPlace));
+  });
+  mobileMap.addEventListener('change',()=>setZoom(zoomed));
+  setZoom(false);
   showPlace(selectedPlace);
 }
 

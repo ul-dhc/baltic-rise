@@ -336,3 +336,57 @@ img,:is(.portrait,.person-image,.credit,.archive-manuscript) img{border-radius:v
 .postcard-window,.gallery-image-window,#corpus-manuscript .postcard-window,#corpus-manuscript .postcard-window img{border-radius:var(--radius-inner)}
 #archive-gallery[data-manuscript="ellen"] .gallery-image-window{border-radius:var(--radius-inner)}
 .archival-composition .archival-letter{clip-path:inset(6% 7% 5% round var(--radius-inner))}
+
+/* Give portraits room to breathe on phones; the next card hints at swiping. */
+.portrait-swipe-hint{display:none}
+@media(max-width:600px){
+ .hero-visual{margin-top:28px;padding-top:0;min-width:0}
+ .hero .portrait-composition{display:flex;align-items:stretch;gap:16px;position:relative;height:auto;max-width:none;margin:0 -8px;padding:12px 8px 20px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:8px;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;isolation:isolate}
+ .hero .portrait{position:relative;inset:auto;flex:0 0 min(76%,300px);width:auto;min-width:0;transform:none!important;margin:0;padding:8px 8px 0;border-radius:20px;box-shadow:none;scroll-snap-align:start;scroll-snap-stop:normal;z-index:1}
+ .hero .portrait img{width:100%;height:clamp(230px,68vw,330px);object-fit:cover;object-position:center top;border-radius:12px}
+ .hero .portrait figcaption{font-size:1rem;line-height:1.4;overflow-wrap:anywhere;padding:12px 4px 14px}
+ .hero .portrait figcaption span{display:block;font-size:.875rem;margin-top:4px}
+ .hero .portrait:hover,.hero .portrait:focus-within{transform:none!important;translate:none}
+ .hero .hero-mimosa{width:260px;height:100%;left:100px;top:0;transform:rotate(9deg);object-fit:contain}
+ .portrait-swipe-hint{display:block;font-size:.875rem;line-height:1.5;color:var(--muted);margin:0 0 8px}
+ .hero .portrait-composition:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:20px}
+}
+
+/* Phone layouts prioritise names, map selection and comfortable touch targets. */
+.map-place[role="button"]{cursor:pointer}.map-place:focus-visible{outline:none}.map-place:focus-visible .map-dot{stroke:var(--focus);stroke-width:4px}
+@media(max-width:600px){
+ body{overflow-x:clip}
+ .section{padding-block:48px}.corpus-section{padding-block:48px}.section-heading{margin-bottom:26px}
+ .about .archival-composition{height:305px;margin-top:24px;max-width:360px}
+ .about .archival-composition .mimosa-cutout{height:270px}.about .archival-composition .archival-letter{height:210px;top:55px}
+ .archival-composition figcaption{font-size:.875rem;line-height:1.5}
+ .women-timeline .person summary{grid-template-columns:minmax(0,1fr) 24px;gap:6px 12px;padding:18px 0}
+ .women-timeline .person-identity{grid-template-columns:40px minmax(0,1fr);column-gap:12px}
+ .women-timeline .person-identity .person-thumbnail{width:40px;height:56px}
+ .women-timeline .person-name{font-size:1.3rem;line-height:1.25}
+ .women-timeline summary>.plus{grid-column:2;grid-row:1}
+ .women-timeline summary>.timeline-track{grid-column:1/-1;grid-row:2;height:20px;min-height:20px;margin-left:52px}
+ .women-axis>span{display:none}.women-axis>div{left:52px;right:0}.women-axis{height:30px;margin-top:16px}
+ .map-layout{display:flex;flex-direction:column;gap:0}.map-sidebar{display:contents}
+ .map-sidebar>.field-label{order:0;font-size:1rem;color:var(--ink);margin-bottom:6px}
+ .map-sidebar>.writer-picker,.map-sidebar>select{order:1;margin-bottom:20px}
+ .map-canvas{order:2}.map-panel{order:3;padding-top:20px}
+ .map-toolbar{gap:10px 20px;padding:12px 14px 4px}.map-toolbar button{font-size:.9375rem}
+ .baltic-map{height:auto;min-height:250px;flex:none;aspect-ratio:1.35}
+ .baltic-map:not(.zoomed) .map-label{display:block;font-size:31px;letter-spacing:1px;opacity:.8}
+ .baltic-map .map-place.selected .map-point-label{display:block}
+ .map-caption{font-size:.875rem;line-height:1.45;padding:10px 14px}
+ .map-panel h3{font-size:1.7rem}.map-panel .eyebrow{margin-bottom:6px}.map-panel>p:not(.eyebrow){margin:4px 0 0}
+ .map-panel ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 18px;margin-top:14px;font-size:1rem;line-height:1.45}
+ .map-panel li a{min-height:44px;display:flex;align-items:center;padding-block:7px}
+ .place-buttons{flex-wrap:nowrap;overflow-x:auto;gap:20px;padding:8px 0;margin-top:16px;overscroll-behavior-x:contain}
+ .place-button{flex:0 0 auto;white-space:nowrap;font-size:1rem}
+ .connections-playground{height:1080px}
+ #corpus-manuscript .postcard-window img{max-height:230px}
+ .team-grid h3{font-size:1.8rem}.supervision-grid{gap:28px}
+ .institution-row{margin-top:32px}.footer{padding-block:30px}
+}
+
+@media(max-width:600px){.places-section{--writer-highlight:#93600e}[data-theme="dark"] .places-section{--writer-highlight:#e9b65e}}
+@media(max-width:600px){.corpus-grid h2{font-size:clamp(2rem,9vw,2.8rem)}.map-toolbar button{min-height:44px}}
+.map-place:focus{outline:none}.map-place{ -webkit-tap-highlight-color:transparent }
