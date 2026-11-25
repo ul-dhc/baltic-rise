@@ -117,10 +117,28 @@
   {
     "file": "jaksch.jpg",
     "subject": "Elfriede Jaksch",
-    "credit": "Portrait captioned “Schack von Igar (Elfriede Jaksch)”. Image supplied by Chiara Gianni.",
+    "credit": "Elfriede Jaksch (Schack von Igar), portrait before 1897. Photographer unknown. Wikimedia Commons, from ngiyaw e-books.",
     "provided_by": "Chiara Gianni",
     "original_filename": "Elfriede_Jaksch.jpg",
-    "reuse_note": "Supplied for the project website; no open licence asserted.",
-    "display_changes": "Original image retained; display crops applied with CSS."
+    "reuse_note": "Wikimedia Commons records this reproduction as public domain in the United States (PD-US-expired).",
+    "display_changes": "Original image retained; display crops applied with CSS.",
+    "source": "https://commons.wikimedia.org/wiki/File:Elfriede_Jaksch.jpg",
+    "original_source": "https://m.ngiyaw-ebooks.org/ngiyaw/author/schack.htm",
+    "checked": "2026-11-25",
+    "source_verification": "Local image SHA-1 matches the Wikimedia Commons original.",
+    "related_archival_portrait": {
+      "photographer": "F. Müller (Rīga)",
+      "title": "Portrait photograph of Schack von Igar [Elfriede Jaksch]",
+      "date": "Undated",
+      "technique": "Albumen print, cabinet card",
+      "dimensions_cm": "16.4 × 10.8",
+      "holder": "Goethe- und Schiller-Archiv, Klassik Stiftung Weimar",
+      "collection": "Kürschner Collection",
+      "shelfmark": "GSA 55/BS 1957",
+      "catalogue": "https://kalliope-verbund.info/DE-2060-BE-55-80178",
+      "archive_record": "https://ores.klassik-stiftung.de/ords/f?p=401:2:::::P2_ID:80178",
+      "digital_image_available": false,
+      "checked": "2026-11-25"
+    }
   }
 ]
