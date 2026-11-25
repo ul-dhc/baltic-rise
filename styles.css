@@ -330,6 +330,9 @@ img:not(.hero-manuscript):hover,a:focus-visible>img{translate:0 -3px;outline:non
 .archival-composition .archival-letter{filter:url(#handwriting-ink);box-shadow:none;opacity:.78;clip-path:inset(6% 7% 5%);mask-image:linear-gradient(to bottom,transparent,#000 7%,#000 90%,transparent);border-radius:0}
 [data-theme="dark"] .archival-composition .archival-letter{filter:url(#handwriting-cream);opacity:.7}
 .archival-composition .archival-letter:hover{box-shadow:none}
-#corpus-manuscript .postcard-window{box-shadow:none}
-#corpus-manuscript .postcard-window img{filter:url(#handwriting-cream);clip-path:inset(6% 7% 5%);mask-image:linear-gradient(to bottom,transparent,#000 8%,#000 91%,transparent);box-shadow:none;border-radius:0;opacity:.8}
-#corpus-manuscript .postcard-window:hover,#corpus-manuscript .postcard-window img:hover{box-shadow:none}
+
+/* Keep image corners consistent with the page's rounded visual style. */
+img,:is(.portrait,.person-image,.credit,.archive-manuscript) img{border-radius:var(--radius-inner)}
+.postcard-window,.gallery-image-window,#corpus-manuscript .postcard-window,#corpus-manuscript .postcard-window img{border-radius:var(--radius-inner)}
+#archive-gallery[data-manuscript="ellen"] .gallery-image-window{border-radius:var(--radius-inner)}
+.archival-composition .archival-letter{clip-path:inset(6% 7% 5% round var(--radius-inner))}
